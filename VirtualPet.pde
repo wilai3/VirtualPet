@@ -1,3 +1,7 @@
+import processing.serial.*;
+import cc.arduino.*;
+Arduino arduino;
+
 void setup()
 {
   size(300,300);
@@ -25,6 +29,12 @@ void draw()
   ellipse(125,150,22,22);
   rect(120,140,50,15);
   ellipse(160,145,20,20);
+  fill(#AAA1A1);
+  ellipse(325-90/(1+x),250,25,15);
+  rect(330-90/(1+x),250,30,2);
   fill(#000500);
   ellipse(160,145,3,3);
+  ellipse(320-90/(1+x),250,3,3);
+  fill(#FF989A);
+  rect(320-90/(1+x),238,3,7);
 }
